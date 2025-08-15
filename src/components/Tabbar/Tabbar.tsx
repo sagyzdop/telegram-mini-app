@@ -23,16 +23,6 @@ const tabs = [
     
 ]
 
-export default {
-    title: 'Tabbar',
-    component: Tabbar,
-    decorators: [Story => <div style={{
-        height: 100
-    }}>
-        <Story />
-    </div>]
-}
-
 export const TabbarSection = () => {
     const [currentTab, setCurrentTab] = useState(tabs[0].id);
     return <Tabbar>
