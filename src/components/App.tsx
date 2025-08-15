@@ -9,6 +9,7 @@ import { BannerSection } from '@/components/BannerSection';
 import { TimelineSection } from '@/components/TimelineSection/TimelineSection';
 import { TooltipSection } from '@/components/TooltipSection/TooltipSection';
 import { ModalSection } from '@/components/ModalSection/ModalSection';
+import { TabbarSection } from '@/components/Tabbar/tabbar';
 
 import { routes } from '@/navigation/routes.tsx';
 
@@ -34,6 +35,7 @@ export function App() {
       <TimelineSection />
       <TooltipSection />
       <ModalSection />
+      <TabbarSection />
     </List>
 
     </AppRoot>
