@@ -2,7 +2,7 @@ import {
   Section,
   Cell,
   Image,
-  List,
+  // List,
   Divider,
 } from "@telegram-apps/telegram-ui";
 import type { FC } from "react";
@@ -15,7 +15,7 @@ import tonSvg from "./ton.svg";
 export const IndexPage: FC = () => {
   return (
     <Page back={false}>
-      <List>
+      {/* <List> */}
         {/* <Section
           header="Features"
           footer="You can use these pages to learn more about features, provided by Telegram Mini Apps and other useful projects"
@@ -119,7 +119,7 @@ export const IndexPage: FC = () => {
             </Cell>
           </Link>
         </Section>
-      </List>
+      {/* </List> */}
     </Page>
   );
 };
