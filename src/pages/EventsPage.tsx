@@ -1,18 +1,21 @@
 // src/pages/EventsPage.tsx
-import { FC } from "react";
+import type { FC } from "react";
 import { Page } from "@/components/Page";
-import { Card, List, Section } from "@telegram-apps/telegram-ui";
+import { Card, Input, List, Section } from "@telegram-apps/telegram-ui";
 import { CardChip } from "@telegram-apps/telegram-ui/dist/components/Blocks/Card/components/CardChip/CardChip";
 import { CardCell } from "@telegram-apps/telegram-ui/dist/components/Blocks/Card/components/CardCell/CardCell";
 import { CardsScroller } from "@/components/CardsScroller";
 import { mockEvents } from "@/data/mockEvents";
-import { TelegramSearchBar } from "@/components/SearchBar";
+import { Icon24SunLow } from "@telegram-apps/telegram-ui/dist/icons/24/sun_low";
 
 export const EventsPage: FC = () => {
   return (
     <Page back={false}>
+      <Input
+        placeholder="Search Events"
+        before={<Icon24SunLow /> }
+      />
       <List className="bg-(--tgui--secondary_bg_color)">
-      <TelegramSearchBar />
         <Section header="Featured Events">
           <CardsScroller>
             {mockEvents.map((event) => (
