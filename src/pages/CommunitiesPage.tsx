@@ -1,7 +1,7 @@
 import {
   // Section,
   Cell,
-  Image,
+  // Image,
   // List,
   Divider,
   Avatar,
