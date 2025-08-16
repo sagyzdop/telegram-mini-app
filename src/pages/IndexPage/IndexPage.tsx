@@ -11,7 +11,6 @@ import { Link } from "@/components/Link/Link.tsx";
 import { Page } from "@/components/Page.tsx";
 
 import tonSvg from "./ton.svg";
-import { openInvoicePromise } from "@telegram-apps/sdk-react";
 
 export const IndexPage: FC = () => {
   return (
