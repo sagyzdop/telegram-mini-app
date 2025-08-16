@@ -6,14 +6,14 @@ import {
   isMiniAppDark,
 } from "@telegram-apps/sdk-react";
 import { AppRoot } from "@telegram-apps/telegram-ui";
-import { List } from "@telegram-apps/telegram-ui";
-import { CellSection } from "@/components/CellSection";
-import { FormSection } from "@/components/FormSection/FormSection";
-import { BannerSection } from "@/components/BannerSection";
-import { TimelineSection } from "@/components/TimelineSection/TimelineSection";
-import { TooltipSection } from "@/components/TooltipSection/TooltipSection";
-import { ModalSection } from "@/components/ModalSection/ModalSection";
-import { TabbarSection } from "@/components/Tabbar/Tabbar";
+// import { List } from "@telegram-apps/telegram-ui";
+// import { CellSection } from "@/components/CellSection";
+// import { FormSection } from "@/components/FormSection/FormSection";
+// import { BannerSection } from "@/components/BannerSection";
+// import { TimelineSection } from "@/components/TimelineSection/TimelineSection";
+// import { TooltipSection } from "@/components/TooltipSection/TooltipSection";
+// import { ModalSection } from "@/components/ModalSection/ModalSection";
+// import { TabbarSection } from "@/components/Tabbar/Tabbar";
 
 import { routes } from "@/navigation/routes.tsx";
 
@@ -34,7 +34,7 @@ export function App() {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </HashRouter>
-      <div style={{ paddingBottom: "116px" }}>
+      {/* <div style={{ paddingBottom: "116px" }}>
       <List>
         <CellSection />
         <FormSection />
@@ -45,7 +45,7 @@ export function App() {
       </List>
 
       </div>
-      <TabbarSection  />
+      <TabbarSection  /> */}
     </AppRoot>
   );
 }
