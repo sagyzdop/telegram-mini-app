@@ -6,11 +6,13 @@ import { CardChip } from "@telegram-apps/telegram-ui/dist/components/Blocks/Card
 import { CardCell } from "@telegram-apps/telegram-ui/dist/components/Blocks/Card/components/CardCell/CardCell";
 import { CardsScroller } from "@/components/CardsScroller";
 import { mockEvents } from "@/data/mockEvents";
+import { TelegramSearchBar } from "@/components/SearchBar";
 
 export const EventsPage: FC = () => {
   return (
     <Page back={false}>
       <List className="bg-(--tgui--secondary_bg_color)">
+      <TelegramSearchBar />
         <Section header="Featured Events">
           <CardsScroller>
             {mockEvents.map((event) => (
