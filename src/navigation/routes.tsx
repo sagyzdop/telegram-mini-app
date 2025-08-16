@@ -7,6 +7,7 @@ import { ThemeParamsPage } from "@/pages/ThemeParamsPage.tsx";
 import { TONConnectPage } from "@/pages/TONConnectPage/TONConnectPage";
 
 import { Icon28Chat } from '@telegram-apps/telegram-ui/dist/icons/28/chat';
+import { EventsPage } from "@/pages/EventPage";
 
 interface Route {
   path: string;
@@ -26,7 +27,7 @@ export const routes: Route[] = [
   },
   {
     path: "/events",
-    Component: InitDataPage,
+    Component: EventsPage,
     title: "Events",
     icon: <Icon28Chat />,
     showInTabbar: true,
