@@ -26,14 +26,14 @@ export function App() {
       appearance={isDark ? "dark" : "light"}
       platform={["macos", "ios"].includes(lp.tgWebAppPlatform) ? "ios" : "base"}
     >
-      {/* <HashRouter>
+      <HashRouter>
         <Routes>
           {routes.map((route) => (
             <Route key={route.path} {...route} />
           ))}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-      </HashRouter> */}
+      </HashRouter>
       <div style={{ paddingBottom: "116px" }}>
       <List>
         <CellSection />
