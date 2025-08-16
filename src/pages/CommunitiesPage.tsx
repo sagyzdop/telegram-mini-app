@@ -24,7 +24,7 @@ export const CommunitiesPage: FC = () => {
           before={<Avatar size={48} />}
           description="We are the club that does fencing."
           interactiveAnimation="background"
-          subtitle="Subtitle"
+          subtitle="Academic Club"
         >
           NU Fencing Club
         </Cell>
@@ -36,7 +36,7 @@ export const CommunitiesPage: FC = () => {
           before={<Avatar size={48} />}
           description="We are the club that does fencing."
           interactiveAnimation="background"
-          subtitle="Subtitle"
+          subtitle="Academic Club"
         >
           NU Fencing Club
         </Cell>
@@ -48,7 +48,7 @@ export const CommunitiesPage: FC = () => {
           before={<Avatar size={48} />}
           description="We are the club that does fencing."
           interactiveAnimation="background"
-          subtitle="Subtitle"
+          subtitle="Academic Club"
         >
           NU Fencing Club
         </Cell>
