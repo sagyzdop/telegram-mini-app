@@ -7,7 +7,6 @@ import {
   Avatar,
   Badge,
   Input,
-  List,
 } from "@telegram-apps/telegram-ui";
 import type { FC } from "react";
 
