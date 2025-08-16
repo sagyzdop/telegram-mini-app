@@ -6,7 +6,6 @@ import { CardChip } from "@telegram-apps/telegram-ui/dist/components/Blocks/Card
 import { CardCell } from "@telegram-apps/telegram-ui/dist/components/Blocks/Card/components/CardCell/CardCell";
 import { CardsScroller } from "@/components/CardsScroller";
 import { mockEvents } from "@/data/mockEvents";
-import { LargeTitle } from "@telegram-apps/telegram-ui";
 
 export const EventsPage: FC = () => {
   return (
