@@ -13,7 +13,7 @@ import { AppRoot } from "@telegram-apps/telegram-ui";
 // import { TimelineSection } from "@/components/TimelineSection/TimelineSection";
 // import { TooltipSection } from "@/components/TooltipSection/TooltipSection";
 // import { ModalSection } from "@/components/ModalSection/ModalSection";
-// import { TabbarSection } from "@/components/Tabbar/Tabbar";
+import { TabbarSection } from "@/components/Tabbar";
 
 import { routes } from "@/navigation/routes.tsx";
 
@@ -25,17 +25,20 @@ export function App() {
     <AppRoot
       appearance={isDark ? "dark" : "light"}
       platform={["macos", "ios"].includes(lp.tgWebAppPlatform) ? "ios" : "base"}
+      className="mt-24"
     >
       <HashRouter>
-        <Routes>
-          {routes.map((route) => (
-            <Route key={route.path} {...route} />
-          ))}
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
+        <div className="mb-[124px]">
+          <Routes>
+            {routes.map((route) => (
+              <Route key={route.path} {...route} />
+            ))}
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+        </div>
+        <TabbarSection />
       </HashRouter>
-      {/* <div style={{ paddingBottom: "116px" }}>
-      <List>
+      {/* <List>
         <CellSection />
         <FormSection />
         <BannerSection />
@@ -44,8 +47,7 @@ export function App() {
         <ModalSection />
       </List>
 
-      </div>
-      <TabbarSection  /> */}
+      </div>*/}
     </AppRoot>
   );
 }
